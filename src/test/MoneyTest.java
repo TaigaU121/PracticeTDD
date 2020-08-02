@@ -1,5 +1,3 @@
-package test;
-
 import main.Dollar;
 import org.junit.jupiter.api.Test;
 
@@ -10,7 +8,6 @@ class MoneyTest {
     @Test
     public void testMultiplication() {
         Dollar five = new Dollar(5);
-        five.times(2);
         /* amountが five.time(2),five.times(3)と上書きされることを防ぐため
          timesメソッドからproductという新しいオブジェクトを返すようにする */
         Dollar product = five.times(2);

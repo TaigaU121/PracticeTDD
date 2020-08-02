@@ -7,7 +7,7 @@ public class Dollar {
         this.amount = amount;
     }
     public Dollar times(int multiplier) {
-        amount *= multiplier;
-        return null;
+//        return null; // コンパイル通すことが目的
+        return new Dollar(amount * multiplier);
     }
 }
