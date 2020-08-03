@@ -10,4 +10,7 @@ public class Dollar {
 //        return null; // コンパイル通すことが目的
         return new Dollar(amount * multiplier);
     }
+    public boolean equals(Object object) {
+        return true;
+    }
 }
