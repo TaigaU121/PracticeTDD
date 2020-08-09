@@ -18,6 +18,7 @@ class MoneyTest {
         assertFalse(new Dollar(5).equals(new Dollar(6))); //三角推量
         assertTrue (new Franc(5).equals(new Franc(5)));
         assertFalse(new Franc(5).equals(new Franc(6))); //三角推量
+        assertFalse(new Franc(5).equals(new Dollar(5))); // 5フランと5ドルは一緒であって欲しくない
         }
     @Test
     public void testFrancMultiplication(){
