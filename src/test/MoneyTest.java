@@ -1,5 +1,6 @@
 import main.Dollar;
 import main.Franc;
+import main.Money;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,7 +9,8 @@ class MoneyTest {
 
     @Test
     public void testMultiplication() {
-        Dollar five = new Dollar(5);
+        Money five = Money.dollar(5); // new がついていてエラーになってた.Money.dollarにnewインスタンス作る作業任せているので不要。
+        System.out.println(five);
         assertEquals(new Dollar(10), five.times(2));
         assertEquals(new Dollar(15), five.times(3));
     }
