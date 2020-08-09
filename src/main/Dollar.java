@@ -2,7 +2,7 @@ package main;
 
 public class Dollar {
 
-    public int amount;
+    private int amount; // amountを参照するクラスがDollarのみになったためprivateに変更
     public Dollar(int amount) {
         this.amount = amount;
     }
