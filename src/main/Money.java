@@ -6,6 +6,7 @@ public abstract class Money {
     （http://masao6739.blog89.fc2.com/blog-entry-19.html
     */
     public abstract Money times(int multiplier);
+    abstract public String currency();
     public boolean equals(Object object) { // equals の引数にObject型を入れることでMoney型にキャストしたのちに金額を返す
         Money money = (Money)object;
         return amount == money.amount
